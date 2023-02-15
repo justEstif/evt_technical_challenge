@@ -6,6 +6,7 @@ Create an environment to display a single webpage. The completion of the goal wi
 
 ## How to run?
 
+- `git clone https://github.com/justEstif/evt_technical_challenge.git && cd evt_technical_challenge`
 - `docker-compose up -d`: create and start container in daemon mode
 - `docker-compose down`: stop container
 
