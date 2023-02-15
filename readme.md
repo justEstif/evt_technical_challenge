@@ -1,5 +1,9 @@
 # EVT Technical Challenge 2021
 
+## Task Description
+
+Create an environment to display a single webpage. The completion of the goal will consist of a single command or script that will instantiate the automation of building a secure webserver that will display a single webpage. [more info](./challenge.md)
+
 ## How to run?
 
 - `docker-compose up -d`: create and start container in daemon mode
