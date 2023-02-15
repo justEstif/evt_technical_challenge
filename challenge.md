@@ -41,4 +41,3 @@
     - Vagrant
     - Terraform
     - Docker
-Q

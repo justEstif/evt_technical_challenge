@@ -1,79 +1,50 @@
-# Notes
+# EVT Technical Challenge 2021
 
 ## How to run?
 
-- `docker-compose up -d`: start
-- `docker-compose down`: stop
+- `docker-compose up -d`: create and start container in daemon mode
+- `docker-compose down`: stop container
 
-## Tech Stack
+![Gif of project ](assets/working-version.gif)
+
+## Completion
+
+- [x] Single entry point to start automation process
+- [x] All supporting code to automate process
+- [x] Documentation of how the solution works and why you chose the specific tools in use
+- [x] A viewable webpage provided above on a secure port (self-signed certificate OK)
+
+## Stack used
 
 - [docker](#docker)
-- [docker compose](#docker-compose)
 - [nginx](#nginx)
 
-## TODO
+## Docker
 
-- [ ] learn more about [docker](https://docker-curriculum.com/)
-- [ ] learn more about [docker compose](https://docs.docker.com/compose/)
-- [ ] learn more about [nginx](https://www.nginx.com/resources/glossary/nginx/)
+Docker is a popular platform dedicated to the development, shipment and running of applications in Docker containers.
 
-## Ideas
+A Docker Container is a lightweight, stand-alone, platform-independent executable package. It has all the dependencies required to run an application.
 
-- bash script instead of docker compose?
-- apache instead of nginx
-- vagrant?
+A Docker image is a template of instructions user to create container(s).
 
-## docker
+Docker compose is a tool that assists in defining and sharing multi-container applications. By using docker-compose, we can define the services in a YAML file, as well as spin them up and tear them down with one single command.
 
-- lets you run micro-service applications in a distributed architecture.
-- a container is a lightweight, stand-alone, executable package of a piece of software that includes everything needed to run it.
-- since containers are platform-independent, Docker can run across both windows and linux based platforms.
+### Why Docker?
 
-### why docker?
+- rapid development: designed for portability and efficiency
+- scale up quickly because of how easy it is to configure
+- virtual machine:
 
-1. os support and architecture
-2. portability
-3. performance
-
-## docker compose
-
-With Compose, we can create a YAML file to define the services and with a single command, can spin everything up or tear it all down.
+  - higher memory usage
+  - less portable: software might not work on different machines
+  - slower boot-up time
 
 ## nginx
+
+- Nginx is a web and reverse proxy server.It can be used to serve static content, such as HTML files, CSS files, and images, as well as dynamic content, such as PHP scripts and database queries.
+
+- The default folder that nginx uses to serve static content is `/usr/share/nginx/html`
 
 ### Why nginx?
 
 - it is stable, scalable, and can handle concurrency better than apache.
-
-
-## Setup
-
-1. `docker pull nginx`: get the official nginx container from dockerhub
-
-2. `docker run -it --rm -d -p 8000:80 --name website nginx`
-
-- `-it`: allocate an interactive pseudo-tty connection
-  - `-i`: keep STDIN open
-  - `-t`: Allocate a pseudo-TTY.
-- `-rm`: automatically remove the container when it exits.
-- `-d`: daemon/run continuously in the background
-- `-p`: publish to port, by default web applications run on port 80
-- `--name`: assign name to the container
-
-- `docker top docker`: list of services running
-- attach shell to docker:
-  - `docker exec -it <container name> /bin/bash`
-  - `nginx -v`: version
-  - `service nginx start`
-  - `service nginx stop`
-- get root location:
-  - `nginx -T`
-    ```yml
-    location / {
-    	root   /usr/share/nginx/html;
-    	index  index.html index.htm;
-    }
-    ```
-  - nginx serves a default page: a index either html or htm at root dir
-    - nginx default folder: /usr/share/nginx/html/
-      - default folder that nginx uses to serve static content
