@@ -1,9 +1,9 @@
 services:
-  nginx:
-    container_name: evt-challenge
+  nginx: # name of service
+    container_name: evt-challenge # custom make for docker container
     build:
-      context: .
+      context: . # Dockerfile in current directory
     ports:
-      - 8000:80
+      - 8000:80 # localhost:8000/
     volumes:
-      - ./html/:/usr/share/nginx/html/
+      - ./html/:/usr/share/nginx/html/ # mount the local html directory to the nginx html directory
