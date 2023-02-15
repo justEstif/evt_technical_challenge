@@ -40,3 +40,4 @@
   - Optional:
     - Vagrant
     - Terraform
+    - Docker

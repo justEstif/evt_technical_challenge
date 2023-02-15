@@ -3,14 +3,20 @@
 ## Tech Stack
 
 - [docker](#docker)
+- [docker compose](#docker-compose)
 - [nginx](#nginx)
-- [bash script](#bash)
 
 ## TODO
 
-- [ ] learn more about docker
-- [ ] learn more about nginx
-- [ ] learn more about bash
+- [ ] learn more about [docker](https://docker-curriculum.com/)
+- [ ] learn more about [docker compose](https://docs.docker.com/compose/)
+- [ ] learn more about [nginx](https://www.nginx.com/resources/glossary/nginx/)
+
+## Ideas
+
+- bash script instead of docker compose?
+- apache instead of nginx
+- vagrant
 
 ## docker
 
@@ -21,13 +27,15 @@
 ### why docker?
 
 1. os support and architecture
-2. portability:
+2. portability
 3. performance
+
+## docker compose
+
+With Compose, we can create a YAML file to define the services and with a single command, can spin everything up or tear it all down.
 
 ## nginx
 
 ### Why nginx?
 
 - it is stable, scalable, and can handle concurrency better than apache.
-
-## bash
