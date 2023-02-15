@@ -1,5 +1,10 @@
 # Notes
 
+## How to run?
+
+- `docker-compose up -d`: start
+- `docker-compose down`: stop
+
 ## Tech Stack
 
 - [docker](#docker)
@@ -38,7 +43,7 @@ With Compose, we can create a YAML file to define the services and with a single
 
 ### Why nginx?
 
-- it is stable, scalable, and can handle concurrency better than apache.  
+- it is stable, scalable, and can handle concurrency better than apache.
 
 
 ## Setup
