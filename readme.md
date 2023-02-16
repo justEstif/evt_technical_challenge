@@ -53,3 +53,7 @@ Docker compose is a tool that assists in defining and sharing multi-container ap
 ### Why nginx?
 
 - it is stable, scalable, and can handle concurrency better than apache.
+- extremely fast: designed to cater for thousands of requests per seconds
+- lightweight: hardly notice it memory and CPU footprint
+- optimized to serve static files
+- can be used as load balancer so it helps solve the attack surface
