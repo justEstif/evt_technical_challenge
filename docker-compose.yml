@@ -1,8 +1,8 @@
 services:
   nginx: # name of service
-    container_name: evt-challenge # custom make for docker container
+    container_name: evt-challenge # custom name for docker container
     build:
-      context: . # Dockerfile in current directory
+      context: . # use Dockerfile in current directory
     ports:
       - 8000:80 # localhost:8000/
     volumes:

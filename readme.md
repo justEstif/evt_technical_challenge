@@ -46,14 +46,16 @@ Docker compose is a tool that assists in defining and sharing multi-container ap
 
 ## nginx
 
-- Nginx is a web and reverse proxy server.It can be used to serve static content, such as HTML files, CSS files, and images, as well as dynamic content, such as PHP scripts and database queries.
+- Nginx is a web and reverse proxy serve that that can also be used as a load balancer and to serve static content, such as HTML files, CSS files, and images.
+
+  - A load balancer distributes traffic across multiple servers and improves performance.
 
 - The default folder that nginx uses to serve static content is `/usr/share/nginx/html`
 
 ### Why nginx?
 
-- it is stable, scalable, and can handle concurrency better than apache.
+- it is stable, scalable, more performant and uses less memory that apache.
 - extremely fast: designed to cater for thousands of requests per seconds
-- lightweight: hardly notice it memory and CPU footprint
+- lightweight and efficient: ideal for high-traffic web applications
 - optimized to serve static files
-- can be used as load balancer so it helps solve the attack surface
+- simple configuration: nginx.conf
