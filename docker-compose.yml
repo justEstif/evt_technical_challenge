@@ -7,3 +7,4 @@ services:
       - 8000:80 # localhost:8000/
     volumes:
       - ./html/:/usr/share/nginx/html/ # mount the local html directory to the nginx html directory
+      - ./nginx/:/etc/nginx/nginx/ # mount the local nginx directory to the nginx
