@@ -6,9 +6,9 @@ Create an environment to display a single webpage. The completion of the goal wi
 
 ## How to run?
 
-- `git clone https://github.com/justEstif/evt_technical_challenge.git && cd evt_technical_challenge`
-- `docker-compose up -d`: create and start container in daemon mode
-- `docker-compose down`: stop container
+1. `git clone https://github.com/justEstif/evt_technical_challenge.git && cd evt_technical_challenge`
+2. `docker-compose up -d`: create and start container in daemon mode
+3. `docker-compose down`: stop container
 
 ![Gif of project ](assets/working-version.gif)
 
@@ -44,6 +44,8 @@ Docker compose is a tool that assists in defining and sharing multi-container ap
   - less portable: software might not work on different machines
   - slower boot-up time
 
+- The main caveat of using Docker containers over a VM is that they are less secure. Docker container share the same kernel as the host hence, a kernel bug inside a container could exploit the host OS.
+
 ## nginx
 
 - Nginx is a web and reverse proxy serve that that can also be used as a load balancer and to serve static content, such as HTML files, CSS files, and images.
@@ -59,3 +61,8 @@ Docker compose is a tool that assists in defining and sharing multi-container ap
 - lightweight and efficient: ideal for high-traffic web applications
 - optimized to serve static files
 - simple configuration: nginx.conf
+
+### Why nginx:alpine?
+
+- Alpine linux and much smaller than most distrubuition base images and thus leads to much slimmer images in general. It is also know for being secure.
+- The main caveat to note is that it does use musl libc instead of glibc and friends, so software will often run into issues depending on the depth of their libc requirements/assumptions.

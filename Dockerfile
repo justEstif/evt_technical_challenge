@@ -1,4 +1,4 @@
-# alphine linux is super lightweight
+# alphine linux is lightweight and secure
 # alpine + nginx = 5mb => reducing the attack surface(number of vulnerabilities)
 FROM nginx:1.23.3-alpine
 
