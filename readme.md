@@ -6,9 +6,15 @@ Create an environment to display a single webpage. The completion of the goal wi
 
 ## How to run?
 
+### Option 1
+
 1. `git clone https://github.com/justEstif/evt_technical_challenge.git && cd evt_technical_challenge`
 2. `docker-compose up -d`: create and start container in detached mode
 3. `docker-compose down`: stop container
+
+### Option 2
+
+1. `docker run -it --rm -d -p 8000:80 --name evt justestif/evt`
 
 ![Gif of project ](assets/working-version.gif)
 
