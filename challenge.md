@@ -6,8 +6,7 @@
 2. a single command or script that will instantiate the automation of building a secure webserver that will display a single [webpage](https://bitbucket.org/bjgiller/evt-tech-challenge/raw/master/evt-web.html).
 
 - The webpage must be displayed from a local-source and not from git (must be downloaded from git).
-- You must use at least one web server
-- the os build doesn't need to be automated, but can be something like docker, vagrant, vbox or cloud service(s)
+- the OS build doesn't need to be automated, but can be something like docker, vagrant, vbox or cloud service(s)
 - If Docker is used, you do not need any Config-Management tools.
 
 ## Completion

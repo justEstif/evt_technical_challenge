@@ -7,7 +7,7 @@ Create an environment to display a single webpage. The completion of the goal wi
 ## How to run?
 
 1. `git clone https://github.com/justEstif/evt_technical_challenge.git && cd evt_technical_challenge`
-2. `docker-compose up -d`: create and start container in daemon mode
+2. `docker-compose up -d`: create and start container in detached mode
 3. `docker-compose down`: stop container
 
 ![Gif of project ](assets/working-version.gif)
@@ -64,5 +64,6 @@ Docker compose is a tool that assists in defining and sharing multi-container ap
 
 ### Why nginx:alpine?
 
-- Alpine linux and much smaller than most distrubuition base images and thus leads to much slimmer images in general. It is also know for being secure.
+- Alpine linux and much smaller than most distribution base images and thus leads to much slimmer images in general. It is also know for being secure.
+
 - The main caveat to note is that it does use musl libc instead of glibc and friends, so software will often run into issues depending on the depth of their libc requirements/assumptions.
