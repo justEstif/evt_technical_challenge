@@ -21,7 +21,7 @@ Create an environment to display a single webpage. The completion of the goal wi
 
 ## Stack used
 
-- [docker](#docker)
+- [docker with alpine](#docker)
 - [nginx](#nginx)
 
 ## Docker
